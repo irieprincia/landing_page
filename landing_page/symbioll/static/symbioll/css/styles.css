@@ -1,0 +1,228 @@
+/*Global*/
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+    font-size: 10px;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+
+}
+
+.container{
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 2.2rem;
+}
+
+/*header*/
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 1400;
+    height: 4.4rem;
+    background-color: rgba(0,0,0, .8);
+    backdrop-filter: blur(2rem);
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 -1rem;
+}
+
+.nav-list-mobile{
+    display: none;
+}
+
+.nav-link{
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 0 1rem;
+    transition: opacity .5s;
+}
+
+.nav-link:hover{
+    opacity: .7;
+}
+
+.nav-link-symbioll{
+    width: 1.6rem;
+    height: 4.4rem;
+    background: url("images/landing_page/icon_symbioll.jpeg") center no-repeat;
+}
+
+/*symbioll section*/
+
+.symbioll{ 
+    background: url("images/landing_page/background_symbioll.jpeg");
+    margin-top: 4.4rem;
+}
+
+.title{
+    color: #fff;
+    text-align: center;
+    padding-top: 5.5rem;
+}
+
+.title-heading{
+    font-size: 5.6rem;
+    line-height: 1.07143;
+    letter-spacing: -.005rem;
+}
+
+.title-sub-heading{
+    font-size: 2.65rem;
+    margin-top: .6rem;
+    letter-spacing: .008rem;
+    font-weight: 400;
+}
+
+.title-text{
+    font-size: 1.7rem;
+    color: #888;
+    margin-top: .68rem;
+}
+
+.inscription{
+    text-align: center;
+    margin-top: 1.8rem;
+}
+
+.inscription-link{
+    color: #66bbff;
+    font-size: 2.1rem;
+    display: inline-block;
+}
+
+.inscription-link:nth-child(2){
+    margin-left: 2.6rem;
+}
+
+.inscription-link:hover{
+    border-bottom: 2px solid #66bbff;
+
+}
+
+/*thessa section*/
+
+.thessa{
+    background: url("images/landing_page/background-thessa.jpeg");
+     
+}
+
+.title-dark{
+    color: #000;
+
+}
+
+.inscription-link-darker{
+    color: #0070c9;
+}
+
+.inscription-link-darker:hover{
+    border-bottom-color: #0070c9;
+}
+
+/*cône section*/
+
+.cône{
+    background: url("images/landing_page/background-cône.jpeg");
+}
+ 
+/*moved to the bottom of all section*/
+
+.hero{
+    height: 96.2rem;
+    background-size: auto 73.6rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: .6rem solid #fff;
+    border-bottom: .6rem solid #fff;
+}
+
+/*end*/
+
+@media screen and (max-width: 1068px) {
+    .symbioll{
+        background: url("images/landing_page/background_symbioll_medium.jpeg")
+
+    }
+
+    .thessa{
+        background: url("images/landing_page/background_thessa_medium.jpeg")
+    }
+
+    .cône{
+        background: url("images/landing_page/background_cône_medium.jpeg")
+    }
+
+    .hero{
+        height: 65rem;
+        background-size: auto 69.8rem;
+        background-position: bottom center;
+        background-repeat: no repeat;
+    }
+
+    .title-heading{
+        font-size: 4.4rem;
+    }
+
+    .title-sub-heading{
+        font-size: 2.4rem;
+    }
+    
+    .inscription-link:nth-child(2){
+        margin-left: 2rem;
+    }
+    
+
+}
+
+@media screen and (max-width: 767px) {
+    header{
+        height: 4.8rem;
+        transition: background .36s cubic-bezier(0.32, 0.08, 0.24, 1),
+                    height .56s cubic-bezier(0.32, 0.08, 0.24, 1)
+
+    }
+
+    header .container{
+        padding: 0;
+    }
+
+    .symbioll{
+        margin-top: 4.8rem;
+    }
+
+    .nav-list-larger{
+        display: none;
+    }
+
+    .nav-list{
+        margin-top: 0;
+    }
+
+    .nav-list-mobile{
+        display: flex;
+    }
+
+    .nav-item{
+        width: 4.8rem;
+        height: 4.8rem;
+        display: flex;
+        justify-content: center;
+    }
